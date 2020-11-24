@@ -71,6 +71,7 @@ type
     Line6: TLine;
     Layout7: TLayout;
     procedure img_notificacaoClick(Sender: TObject);
+    procedure img_add_pedidoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -83,9 +84,17 @@ var
 implementation
 
 uses
-    UnitNotificacao;
+    UnitNotificacao, UnitPedido;
 
 {$R *.fmx}
+
+procedure TFrmPrincipal.img_add_pedidoClick(Sender: TObject);
+begin
+    if not Assigned(FrmPedido) then
+        Application.CreateForm(TFrmPedido,FrmPedido);
+    FrmPedido.Show
+
+end;
 
 procedure TFrmPrincipal.img_notificacaoClick(Sender: TObject);
 begin

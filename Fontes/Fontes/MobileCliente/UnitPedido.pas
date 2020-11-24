@@ -99,7 +99,9 @@ begin
         //
 
         TListItemText(Objects.FindDrawable('TxtNome')).Text := nome;
-        TListItemText(Objects.FindDrawable('TxtValor')).Text := FormatFloat('#,##0.00', valor);
+        //TListItemText(Objects.FindDrawable('TxtValor')).Text := FormatFloat('#,##0.00', valor);
+        TListItemText(Objects.FindDrawable('TxtValor')).Text := Format('%.2m', [valor]);
+
         TListItemText(Objects.FindDrawable('TxtData')).Text := dt;
 
         TListItemImage(Objects.FindDrawable('ImgAprovar')).Bitmap := img_aprovar.Bitmap;

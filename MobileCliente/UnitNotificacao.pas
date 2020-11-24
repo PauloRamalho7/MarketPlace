@@ -13,8 +13,8 @@ type
   TFrmNotificacao = class(TForm)
     layout_toolbar: TLayout;
     lbl_titulo: TLabel;
-    img_notificacao: TImage;
-    img_add_pedido: TImage;
+    img_voltar: TImage;
+    img_carregar_notif: TImage;
     Line1: TLine;
     lv_notificacoes: TListView;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -28,6 +28,8 @@ var
   FrmNotificacao: TFrmNotificacao;
 
 implementation
+
+
 
 {$R *.fmx}
 

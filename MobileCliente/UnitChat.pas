@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
   FMX.Edit, FMX.ListView, FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls,
-  FMX.Layouts;
+  FMX.Layouts, FMX.ScrollBox, FMX.Memo;
 
 type
   TFrmChat = class(TForm)
@@ -20,8 +20,9 @@ type
     Label2: TLabel;
     lv_chat: TListView;
     rect_msg: TRectangle;
-    edt_login_email: TEdit;
     Image1: TImage;
+    Memo1: TMemo;
+    Rectangle1: TRectangle;
   private
     { Private declarations }
   public

@@ -1,25 +1,25 @@
 object FrmChat: TFrmChat
   Left = 0
   Top = 0
-  Caption = 'CHAT'
-  ClientHeight = 628
-  ClientWidth = 343
+  Caption = 'Chat'
+  ClientHeight = 543
+  ClientWidth = 359
   Fill.Kind = Solid
   Position = MainFormCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   object layout_toolbar: TLayout
     Align = Top
-    Size.Width = 343.000000000000000000
+    Size.Width = 359.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object lbl_titulo: TLabel
       Align = Contents
       StyledSettings = [Family]
-      Size.Width = 343.000000000000000000
+      Size.Width = 359.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 18.000000000000000000
@@ -28,7 +28,7 @@ object FrmChat: TFrmChat
       Text = 'Mensagens'
       TabOrder = 0
     end
-    object img_voltar: TImage
+    object img_notificacao: TImage
       MultiResBitmap.Height = 64
       MultiResBitmap.Width = 64
       MultiResBitmap = <
@@ -56,7 +56,9 @@ object FrmChat: TFrmChat
             EC4F63360CF3C58B72F17FBF634C8CB2F6AFB2D401605A04AD924DB9AC8D3E00
             5411922D551405CE2D652E275F786FD60E5F3AEB07A3CF728CA2288AA2A80EA5
             5E0155AA9E4D0B5F38720000000049454E44AE426082}
-          FileName = 'D:\Projetos\MarketPlace\MobileCliente\Images\back.png'
+          FileName = 
+            'D:\99Coders\CursoMarketplace\Fontes\MobileCliente\Images\back.pn' +
+            'g'
         end>
       Align = Left
       Margins.Left = 5.000000000000000000
@@ -72,19 +74,19 @@ object FrmChat: TFrmChat
       Align = Bottom
       LineType = Diagonal
       Position.Y = 49.000000000000000000
-      Size.Width = 343.000000000000000000
+      Size.Width = 359.000000000000000000
       Size.Height = 1.000000000000000000
       Size.PlatformDefault = False
       Stroke.Color = xFFDEDEDE
     end
   end
-  object Rect_Prestador: TRectangle
+  object rect_prestador: TRectangle
     Align = Top
     Fill.Color = claWhite
     Position.Y = 50.000000000000000000
     Sides = [Bottom]
-    Size.Width = 343.000000000000000000
-    Size.Height = 57.000000000000000000
+    Size.Width = 359.000000000000000000
+    Size.Height = 68.000000000000000000
     Size.PlatformDefault = False
     Stroke.Color = xFFDEDEDE
     object c_foto: TCircle
@@ -93,19 +95,19 @@ object FrmChat: TFrmChat
       Margins.Right = 15.000000000000000000
       Position.X = 15.000000000000000000
       Size.Width = 50.000000000000000000
-      Size.Height = 57.000000000000000000
+      Size.Height = 68.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
     end
     object Label2: TLabel
       Align = Client
       StyledSettings = [Family, Style]
-      Size.Width = 263.000000000000000000
-      Size.Height = 57.000000000000000000
+      Size.Width = 279.000000000000000000
+      Size.Height = 68.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 14.000000000000000000
       TextSettings.FontColor = xFF282828
-      Text = 'Paulo Ramalho'
+      Text = 'Heber Stein Mazutti'
       TabOrder = 1
     end
   end
@@ -117,8 +119,8 @@ object FrmChat: TFrmChat
     ItemSpaces.Left = 0.000000000000000000
     ItemSpaces.Right = 0.000000000000000000
     Align = Client
-    Size.Width = 343.000000000000000000
-    Size.Height = 469.000000000000000000
+    Size.Width = 359.000000000000000000
+    Size.Height = 374.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
@@ -137,21 +139,12 @@ object FrmChat: TFrmChat
   object rect_msg: TRectangle
     Align = Bottom
     Fill.Color = claWhite
-    Position.Y = 576.000000000000000000
+    Position.Y = 492.000000000000000000
     Sides = [Top]
-    Size.Width = 343.000000000000000000
-    Size.Height = 52.000000000000000000
+    Size.Width = 359.000000000000000000
+    Size.Height = 51.000000000000000000
     Size.PlatformDefault = False
     Stroke.Color = xFFDEDEDE
-    object edt_login_email: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      Align = Client
-      TabOrder = 1
-      Margins.Bottom = 20.000000000000000000
-      Size.Width = 293.000000000000000000
-      Size.Height = 32.000000000000000000
-      Size.PlatformDefault = False
-    end
     object Image1: TImage
       MultiResBitmap.Height = 128
       MultiResBitmap.Width = 128
@@ -260,13 +253,46 @@ object FrmChat: TFrmChat
             1C74CFA20DF6748CDC34CC10D3317083EF3DE6AC014532415814DCCB90F71C64
             14D2293CC2CF0163E72DB0CEC9BA0DCB6030180C0683C16030180C0683C16030
             180C0683412F00FF03E698DB60483B00370000000049454E44AE426082}
-          FileName = 'D:\Projetos\MarketPlace\MobileCliente\Images\enviar.png'
+          FileName = 
+            'D:\99Coders\CursoMarketplace\Fontes\MobileCliente\Images\enviar.' +
+            'png'
         end>
       Align = Right
-      Position.X = 293.000000000000000000
-      Size.Width = 50.000000000000000000
-      Size.Height = 52.000000000000000000
+      Position.X = 305.000000000000000000
+      Size.Width = 54.000000000000000000
+      Size.Height = 51.000000000000000000
       Size.PlatformDefault = False
+    end
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Size.Width = 293.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFDEDEDE
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Digite uma mensagem...')
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Size.Width = 283.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 275.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
     end
   end
 end

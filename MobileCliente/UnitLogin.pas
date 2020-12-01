@@ -11,6 +11,7 @@ uses
   FMX.Graphics,
   FMX.Layouts,
   FMX.Objects,
+  FMX.Platform,
   FMX.StdCtrls,
   FMX.TabControl,
   FMX.Types,
@@ -141,7 +142,7 @@ begin
         else
         begin
             // Botao back pressionado e teclado NAO visivel...
-            if TabControl1.TabIndex > 0 then
+            if TabControl.TabIndex > 0 then
             begin
                 Key := 0;
                 NavegarAbas(-1);

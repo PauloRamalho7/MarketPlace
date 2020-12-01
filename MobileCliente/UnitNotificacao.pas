@@ -80,6 +80,7 @@ var
     I : Integer;
 begin
     lv_notificacoes.Items.Clear;
+
     for I := 1 to 10 do
         AddNotificacao(I, I+1, '', 'Paulo Ramalho', '20/10', 'Mensagem: ' + I.ToString);
 

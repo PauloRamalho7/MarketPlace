@@ -92,6 +92,7 @@ end;
 
 procedure TFrmPedido.FormShow(Sender: TObject);
 begin
+    TabControl.ActiveTab := TabPedido;
     MudarAba(0);
     ListarOrcamento;
 end;
@@ -118,7 +119,8 @@ begin
 
         TListItemText(Objects.FindDrawable('TxtNome')).Text       := nome;
         TListItemText(Objects.FindDrawable('TxtData')).Text       := dt;
-        TListItemText(Objects.FindDrawable('TxtValor')).Text      := FormatFloat('#,##0.00', valor);
+//        TListItemText(Objects.FindDrawable('TxtValor')).Text      := FormatFloat('#,##0.00', valor);
+        TListItemText(Objects.FindDrawable('TxtValor')).Text      := Format('%.2m', [valor]);
         TListItemImage(Objects.FindDrawable('ImgAprovar')).Bitmap := img_aprovar.Bitmap;
         TListItemImage(Objects.FindDrawable('ImgChat')).Bitmap    := img_chat.Bitmap;
     end;
